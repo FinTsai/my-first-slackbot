@@ -44,11 +44,13 @@ module.exports = (bot) => {
   });
 
   const beverages = ['Mocha :coffee:', 'Latte :coffee:', 'Flat White :coffee:',
-  'Long Black :coffee:', 'Short Black :coffee:', 'Beer :beer:',
-  'Sake :sake:', 'Cocktail :cocktail:'];
+    'Long Black :coffee:', 'Short Black :coffee:', 'Beer :beer:',
+    'Sake :sake:', 'Cocktail :cocktail:'
+  ];
 
   bot.hear(/What should I drink today\?/i, res => {
     return res.send(res.random(beverages));
   });
+
 
 };
