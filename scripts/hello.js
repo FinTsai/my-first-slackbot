@@ -1,7 +1,12 @@
 module.exports = (bot) => {
 
-  bot.hear(/Hello|Hi|Yo|What[’']s up/i, res => {
-    return res.send('Hi there! :heart_eyes: :heart_eyes:');
+  bot.hear(/Hello|Hi|What[’']s up/i, res => {
+    return res.send('Hi there! :heart_eyes:');
+  });
+
+  bot.hear(/What[’']s your name\?/i, res => {
+    res.reply('Nice to meet you :blush:');
+    res.send('My name is finfinbot');
   });
 
   bot.hear(/Are you free on (.+)\?/i, res => {
@@ -51,6 +56,5 @@ module.exports = (bot) => {
   bot.hear(/What should I drink today\?/i, res => {
     return res.send(res.random(beverages));
   });
-
 
 };

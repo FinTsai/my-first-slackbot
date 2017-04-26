@@ -18,9 +18,8 @@ module.exports = (bot) => {
       } else {
         message = 'Please say Yes or No';
       }
-
       res.reply(message);
     }
-  })
+  });
 
 }
