@@ -45,7 +45,7 @@ A simple slackbot for the FinTsai slack, which does tasks including:
 
 ### Approach taken
 
-use Hubot to create following methods:
+Use Hubot to create following methods:
 
   - use .hear command listens for what members say and get response
   - use .respond when someone specifically mentions the Hubot using @
@@ -57,11 +57,13 @@ use Hubot to create following methods:
 
 ### Installation and running the bot
 
-install node package:
-npm install
+**install node package:**
 
-run the bot using the following command:
-HUBOT_SLACK_TOKEN=TOKEN-GOES-HERE ./bin/hubot --adapter slack
+  npm install
+
+**run the bot using the following command:**
+
+  HUBOT_SLACK_TOKEN=TOKEN-GOES-HERE ./bin/hubot --adapter slack
 
 ### Unsolved problems
 
