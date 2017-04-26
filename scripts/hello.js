@@ -1,3 +1,13 @@
+// Commands:
+//  hubot hi/hello/what's up - Greets users.
+//  hubot what's your name? - Returns the bot's name.
+//  hubot are you free on <day>? - Tells you about the bot's availability.
+//  hubot what’s your favourite food? - Tells you about the bot's favourite food.
+//  hubot are you Batman? - Reply with the bot's true identity.
+//  hubot message <userName> <message> - Sends the message to other users.
+//  hubot what should I drink today? - Help you pick a drink.
+
+
 module.exports = (bot) => {
 
   bot.hear(/Hello|Hi|What[’']s up/i, res => {
@@ -5,8 +15,7 @@ module.exports = (bot) => {
   });
 
   bot.hear(/What[’']s your name\?/i, res => {
-    res.reply('Nice to meet you :blush:');
-    res.send('My name is finfinbot');
+    res.reply('Nice to meet you :blush:\nMy name is finfinbot');
   });
 
   bot.hear(/Are you free on (.+)\?/i, res => {

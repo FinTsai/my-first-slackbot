@@ -1,5 +1,3 @@
-First project at GA
-
 # finfinbot
 
 ### Introduction
@@ -32,28 +30,32 @@ Then you can interact with finfin by typing `finfin help`.
 
 ### Resolution
 
-finfinbot is a chat bot that it can answer the questions and also can play number guessing game with you. If you feel alone just talk and play with finfinbot.
+finfinbot is a chat bot that can answer some questions. It also has a number guessing game that you can play. Just try it!
 
 ### Commands
 
-A simple slackbot for the FinTsai slack, which does tasks including:
+A simple slackbot which does tasks including:
 
-  - greet members
-  - introduce
-  - ask suggestion for the drink today
-  - games
+  - hubot hi/hello/what's up - Greets users.
+  - hubot what's your name? - Returns the bot's name.
+  - hubot are you free on <day>? - Tells you about the bot's availability.
+  - hubot what’s your favourite food? - Tells you about the bot's favourite food.
+  - hubot are you Batman? - Reply with the bot's true identity.
+  - hubot message <userName> <message> - Sends the message to other users.
+  - hubot what should I drink today? - Help you pick a drink.
+  - hubot play games? - Play games with the bot. (Work in progress - coming soon)
 
 ### Approach taken
 
-Use Hubot to create following methods:
+The following methods from Hubot framework are used to make finfinbot work:
 
-  - use .hear command listens for what members say and get response
-  - use .respond when someone specifically mentions the Hubot using @
-  - .reply method allows Hubot to reply to a directly to a user with an @ reply
-  - .send method allows Hubot to send a message to the channel
-  - use res.random to choose drink
-  - brain.set to let Hubot to remember before questions
-  - brain.get to get last questions
+  - use bot.hear command listens for what members say and get response
+  - use bot.respond when someone specifically mentions the Hubot using @
+  - res.reply method allows Hubot to reply to a directly to a user with an @ reply
+  - res.send method allows Hubot to send a message to the channel
+  - use res.random to pick a random drink
+  - bot.brain.set to let Hubot to remember previous questions
+  - bot.brain.get to get last questions
 
 ### Installation and running the bot
 
@@ -67,4 +69,4 @@ Use Hubot to create following methods:
 
 ### Unsolved problems
 
-Number guessing game still work on.
+Number guessing game still work in progress.

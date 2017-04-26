@@ -1,3 +1,6 @@
+// Commands:
+//  hubot play games? - Play games with the bot.
+
 module.exports = (bot) => {
 
   bot.hear(/Play games\?/i, res => {
@@ -12,13 +15,15 @@ module.exports = (bot) => {
 
     if (lastQuestion === 'playGame') {
       if (answer === 'YES') {
-        message = 'Please guess a number between 1 to 10';
+        message = 'Too bad. I haven\'t learn the game yet';
+        bot.brain.set('lastQuestion', null);
       } else if (answer === 'NO') {
         message = 'AAAAAAAAAAAEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIHHHHHHHHHH';
+        bot.brain.set('lastQuestion', null);
       } else {
         message = 'Please say Yes or No';
       }
-      res.reply(message);
+      return res.reply(message);
     }
   });
 
